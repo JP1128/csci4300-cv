@@ -81,7 +81,8 @@ footer a:hover {
 }
 
 .splash h1 {
-    font-size: xx-large;
+    font-family: 'Secular One';
+    font-size: 40px;
 }
 
 .splash img {
@@ -120,6 +121,8 @@ section {
 
 /* Section Headings */
 section h2 {
+    font-family: 'Secular One';
+
     text-align: center;
     text-transform: uppercase;
     color: #8E1616;
