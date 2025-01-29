@@ -137,13 +137,10 @@ section p {}
 section a {
     text-decoration: none;
     color: #8E1616;
-    
-    transition: color 200ms linear;
 }
 
-section a:hover {
-    translate: -1px -1px;
-    transition: transform 200ms linear;
+section a:hover, a:focus {
+    text-decoration: underline 0.2em;
 }
 
 div.education {
@@ -219,17 +216,49 @@ dl dd{
 }
 
 /* Contact Page Styles */
-.one-col {}
+.one-col {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 20%;
+    padding: 3rem 3rem;
 
-form {}
+    background-color: white;
+    border: 3px solid #1D1616;
+    box-shadow: 5px 5px 0 0 #8E1616;
+}
 
-form input, form textarea {}
+form {
+    font-family: "Inconsolata";
+    color: #1D1616;
+}
 
-form input:focus, form textarea:focus {}
+form input, form textarea {
+    background-color: #EEEEEE;
+    border: 3px solid #1D1616;
+    transition: all 200ms linear;
+    padding: 0.5rem;
+}
 
-form button {}
+form input:focus, form textarea:focus {
+    box-shadow: 5px 5px 0 0 #8E1616;
+}
 
-form button:hover {}
+form button {
+    border: none;
+    background-color: #8E1616;
+    border: 3px solid #8E1616;
+    padding: 1rem 1rem;
+    color: white;
+    font-weight: 900;
+
+    transition: all 200ms linear;
+}
+
+form button:hover {
+    background-color: transparent;
+    color: #8E1616;
+    cursor: pointer;
+}
 
 .hover-shadow {
     transition: box-shadow 200ms linear;
@@ -237,5 +266,4 @@ form button:hover {}
 
 .hover-shadow:hover {
     box-shadow: 10px 10px 0 0 #8E1616;
-    transition: box-shadow 200ms linear;
 }
