@@ -6,26 +6,33 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Inconsolata">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="css/style_template.css">
     </head>
     <body>
         <nav>
             <p>JP Park</p>
             <p><a href="contact.html">Contact JP</a></p>
         </nav>
-        <section>
+        <section class="splash">
             <h1>JP Park</h1>
-            <img src="images/headshoot.jpg" alt="Professional headshoot of JP Park" height=150>
-            <p>Atlanta, GA &bull; 770.883.4212 &bull; jae.park@uga.edu</p>
-            <p>Value-driven software engineer seeking to leverage skills in agile full-stack development. Passionate about collaborative problem-solving, integrity, and continuous learning. Proven ability to deliver results through compassionate, humble, and servant leadership.</p>
-        </section>
+            <img class="hover-shadow" src="images/headshoot.jpg" alt="Professional headshoot of JP Park">
+            <div>
+                <p class="p-address">Atlanta, GA &bull; 123.456.7890 &bull; jae.park@uga.edu</p>
+                <p class="p-tag hover-shadow">Value-driven software engineer seeking to leverage skills in agile full-stack development. Passionate about collaborative problem-solving, integrity, and continuous learning. Proven ability to deliver results through compassionate, humble, and servant leadership.</p>
+            </div>
+            </section>
         <hr>
         <section>
             <h2>Education</h2>
-            <p>
-                <b>University of Georgia</b>, Bachelor of Science in Computer Science &bull; May 2025 &bull; GPA: 4.00/4.00
-                <br><b>Courses:</b> Data Science I & II, Data Mining, Artificial Intelligence, Software Engineering, Evolutionary Computation, Database Management, Data Structure & Algorithm, Computer Architecture & Network
-            </p>
+            <div class="education hover-shadow">
+                <img src="images/uga.png" alt="UGA Logo">
+                <p>
+                    <b>University of Georgia</b>, B.S. in Computer Science &bull; May 2025 &bull; GPA: 4.00/4.00
+                    <br><b>Courses:</b> Data Science I & II, Data Mining, Artificial Intelligence, Software Engineering, Evolutionary Computation, Database Management, Data Structure & Algorithm, Computer Architecture & Network
+                </p>
+            </div>
         </section>
         <section>
             <h2>Honors and Awards</h2>
@@ -52,33 +59,45 @@
         </section>
         <section>
             <h2>Projects</h2>
-            <h3>Bible Reading Tracker</h3>
-            <ul>
-                <li>Developed a mobile application using React Native to track Bible reading progress, achieving a 95% user satisfaction rate with features like daily reminders, reading plans, and interactive progress visualization.</li>
-                <li>Implemented a scalable backend using AWS Lambda, DynamoDB, and S3, supporting over 10,000 active users with an uptime of 99.99%.</li>
-                <li>Integrated analytics tools such as Firebase and Mixpanel to monitor user engagement, revealing a 30% increase in retention after introducing personalized reading streak rewards.</li>
-            </ul>
-
-            <h3>Walton Habitat App</h3>
-            <ul>
-                <li>Developed a Firebase-backed application with Dart and Flutter framework to allow supervisors to create various types of volunteer events for users to register and receive volunteer hours and to keep a record of attendance for each member.</li>
-                <li>Deployed the application on Android and the web to support more than 200 registered members at a local high school’s Habitat for Humanity student organization.</li> 
-                <li>Utilized Figma for conceptualizing the front-end and scalable NoSQL for the database back-end.</li>
-            </ul>
-
-            <h3>Webtoon Image Classification using CNN/RNN</h3>
-            <ul>
-                <li>Constructed a neural network architecture using Keras and Tensorflow to classify images of comic thumbnails.</li>
-                <li>Programmed a locality-sensitive hashing and nearest neighbors algorithm to search and recommend similar images.</li>
-                <li>Built a web scrapper using BeautifulSoup and Selenium to scrape dynamically-loaded images from web pages.</li>
-            </ul>
+            <div class="three-col">
+                <div class="card hover-shadow">
+                    <img class="hover-shadow" src="images/bible.webp" alt="Bible Reading Tracker App logo">
+                    <h3>Bible Reading Tracker</h3>
+                    <ul>
+                        <li>Developed a mobile application using React Native to track Bible reading progress, achieving a 95% user satisfaction rate with features like daily reminders, reading plans, and interactive progress visualization.</li>
+                        <li>Implemented a scalable backend using AWS Lambda, DynamoDB, and S3, supporting over 10,000 active users with an uptime of 99.99%.</li>
+                        <li>Integrated analytics tools such as Firebase and Mixpanel to monitor user engagement, revealing a 30% increase in retention after introducing personalized reading streak rewards.</li>
+                    </ul>
+                </div>
+                <div class="card hover-shadow">
+                    <img class="hover-shadow" src="images/habitat.webp" alt="Walton Habitat App logo">
+                    <h3>Walton Habitat App</h3>
+                    <ul>
+                        <li>Developed a Firebase-backed application with Dart and Flutter framework to allow supervisors to create various types of volunteer events for users to register and receive volunteer hours and to keep a record of attendance for each member.</li>
+                        <li>Deployed the application on Android and the web to support more than 200 registered members at a local high school’s Habitat for Humanity student organization.</li> 
+                        <li>Utilized Figma for conceptualizing the front-end and scalable NoSQL for the database back-end.</li>
+                    </ul>
+                </div>
+                <div class="card hover-shadow">
+                    <img class="hover-shadow" src="images/webtoon.webp" alt="Webtoon Image Classification using CNN/RNN App logo">
+                    <h3>Webtoon Image Classification using CNN/RNN</h3>
+                    <ul>
+                        <li>Constructed a neural network architecture using Keras and Tensorflow to classify images of comic thumbnails.</li>
+                        <li>Programmed a locality-sensitive hashing and nearest neighbors algorithm to search and recommend similar images.</li>
+                        <li>Built a web scrapper using BeautifulSoup and Selenium to scrape dynamically-loaded images from web pages.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <footer>
-            <small>
-                &copy; <a href="index.html">JP Park</a> &bull;
+            <div>
+                &copy; <a href="contact.html">JP Park</a> 
+            </div>
+            -
+            <div>
                 <a href="https://www.linkedin.com/in/jp1128/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/jpd.psy/"><i class="fa-brands fa-instagram"></i></a>
-            </small>
-        </footer>
+                <a href="https://www.instagram.com/jpd.psy/"><i class="fa-brands fa-instagram"></i></a>    
+            </div>
+            </footer>
     </body>
 </html>

@@ -1,62 +1,222 @@
 /* General Styles */
-body {}
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #EEEEEE;
+    
+    font-family: 'Lato';
+}
 
 /* Nav Styles */
-nav {}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-nav p, nav a {}
+    height: 75px;
+    padding: 0px 40px;
 
-nav a {}
+    background-color: #1D1616;
+}
 
-nav a:hover {}
+nav p, nav a {
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+
+    padding: 0.75rem 1rem;
+
+    background-color: #8E1616;
+    border: 1px solid #8E1616;
+    border-radius: 0px;
+
+    transition: all 200ms linear;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #8E1616;
+    background-color: #EEEEEE;
+    box-shadow: 4px 4px 0 0 #8E1616;
+    
+    transition: all 200ms linear;
+}
 
 /* Footer Styles */
-footer {}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
-footer a {}
+    height: 75px;
+    padding: 0px 40px;
 
-footer a:hover {}
+    color: white;
+    background-color: #1D1616;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #8E1616;
+
+    transition: color 200ms linear;
+}
 
 /* Splash Section */
-.splash {}
+.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 
-.splash h1 {}
+.splash h1 {
+    font-size: xx-large;
+}
 
-.splash img {}
+.splash img {
+    height: 250px;
+    margin-bottom: 20px;
 
-.splash p {}
+    border: 3px solid #1D1616;
+    border-radius: 250px;
+}
+
+.splash .p-address {
+    font-weight: bold;
+    text-align: center;
+}
+
+.splash .p-tag {
+    text-align: center;
+
+    max-width: 750px;
+    padding: 1rem 1rem;
+
+    color: #1D1616;
+    border: 3px solid #1D1616;
+}
 
 /* Horizontal Rules */
-hr {}
+hr {
+    border-top: 5px solid #1D1616;
+    border-bottom: 5px solid #8E1616;
+}
 
 /* Sections */
-section {}
+section {
+    padding: 25px 15%;
+}
 
 /* Section Headings */
-section h2 {}
+section h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #8E1616;
+    font-size: 2rem;
+
+    padding-bottom: 5px;
+    
+    border-bottom: 5px solid #8E1616;
+}
 
 /* Paragraph Styles */
 section p {}
 
 /* link styles */
-section a {}
-section a:hover {}
+section a {
+    text-decoration: none;
+    color: #8E1616;
+    
+    transition: color 200ms linear;
+}
+
+section a:hover {
+    translate: -1px -1px;
+    transition: transform 200ms linear;
+}
+
+div.education {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem 3rem;
+    
+    background-color: white;
+    border: 3px solid #1D1616;
+}
+
+div.education img {
+    height: 100px;
+}
 
 /* List Styles */
-ul {}
+ul {
+    list-style: square;
+}
 
-dl {}
-dl dt{}
-dl dd{}
+dl {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: stretch;
+}
+
+dl dt{
+    font-weight: bold;
+}
+
+dl dd{
+    text-align: right;
+}
 
 /* Project Section */
-.three-col {}
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+}
 
-.card {}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.card img {}
+    padding: 3rem 2rem;
 
-.card h3 {}
+    border: 3px solid #1D1616;
+    box-shadow: 3px 3px 0 0 #8E1616;
+    background-color: white;
+
+    font-family: "Inconsolata";
+}
+
+.card img {
+    max-width: 150px;
+    max-height: 150px;
+    height: auto;
+    width: auto;
+
+    border: 3px solid #1D1616;
+    border-radius: 150px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
 
 /* Contact Page Styles */
 .one-col {}
@@ -70,3 +230,12 @@ form input:focus, form textarea:focus {}
 form button {}
 
 form button:hover {}
+
+.hover-shadow {
+    transition: box-shadow 200ms linear;
+}
+
+.hover-shadow:hover {
+    box-shadow: 10px 10px 0 0 #8E1616;
+    transition: box-shadow 200ms linear;
+}
